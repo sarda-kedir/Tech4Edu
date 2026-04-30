@@ -1,5 +1,7 @@
 # Tech4Edu
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Tech4Edu is an offline-first educational platform designed to empower students in underrepresented regions with structured STEM learning, guided practice, downloadable study materials, and AI-supported tutoring. It includes lesson viewing, quizzes, grade-based lesson access, progress tracking, PDF lesson downloads, and an AI tutor, all designed to keep working even when internet access is unreliable.
 
 ## Features
@@ -98,3 +100,7 @@ The app prefers local Ollama AI first, prioritizes stronger installed models by 
 
 - PDF resources are generated automatically for each lesson.
 - The service worker caches key pages and static assets for offline use.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
