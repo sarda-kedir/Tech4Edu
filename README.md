@@ -1,8 +1,46 @@
-# Tech4Edu
+# Tech4Edu 🌍
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Tech4Edu is an offline-first educational platform designed to empower students in underrepresented regions with structured STEM learning, guided practice, downloadable study materials, and AI-supported tutoring. It includes lesson viewing, quizzes, grade-based lesson access, progress tracking, PDF lesson downloads, and an AI tutor, all designed to keep working even when internet access is unreliable.
+Offline STEM Learning Hub for Underserved Students
+
+---
+
+## 🚀 Overview
+
+Tech4Edu is an offline-first educational platform designed to improve access to quality STEM learning resources for students in regions with limited or unreliable internet access.
+
+The project focuses on delivering structured, interactive, and lightweight learning experiences that can run in low-resource environments.
+
+---
+
+## 🎯 Problem Statement
+
+In many developing regions, including Ethiopia, students face major challenges such as:
+
+- Limited or no internet access for continuous learning
+- Lack of structured digital STEM resources aligned with school curricula
+- Dependence on traditional classroom-only learning
+- Unequal access to educational technology tools
+
+These barriers reduce learning opportunities and widen educational inequality.
+
+---
+
+## 💡 Solution
+
+Tech4Edu provides an offline-capable learning platform that enables students to:
+
+- Access structured STEM learning content without internet
+- Learn through simplified and interactive educational modules
+- Use lightweight educational tools designed for low-end devices
+- Build foundational understanding in science, math, and technology
+
+---
+
+## 🧠 Vision
+
+To build a scalable, offline-first education ecosystem that empowers students in underrepresented regions to learn STEM subjects effectively, regardless of internet availability or device limitations.
 
 ## Features
 
