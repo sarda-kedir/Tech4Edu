@@ -1,0 +1,910 @@
+[
+  {
+    "id": "g9-physics-unit-1",
+    "title": "UNIT 1: Physics and Human Society",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 1: Physics and Human Society",
+    "summary": "Definition, scope, branches, related fields, and major contributors to physics in society.",
+    "sections": [
+      {
+        "heading": "Definition and Nature of Physics",
+        "body": "The word physics comes from the Greek word phusis, meaning nature. Physics is a branch of natural science that explains the fundamental aspects of the universe: what exists, what properties things have, and what processes they undergo.\n\nPhysics helps explain how daily tools and systems work, from cars and refrigerators to radios and communication devices. It also helps us understand physical events such as motion, friction, and electrical effects."
+      },
+      {
+        "heading": "Why Physics Matters in Human Society",
+        "body": "Physics supports innovation and practical life by:\n- explaining technology used in transport, health, and communication\n- helping us understand natural events and engineering systems\n- supporting learning in biology, chemistry, geology, and astronomy\n- training learners to reason using concepts, principles, and laws of nature\n\nA person who studies physics is called a physicist."
+      },
+      {
+        "heading": "Major Branches of Physics",
+        "body": "Physics has many branches that focus on different types of natural behavior.",
+        "table": {
+          "headers": [
+            "Branch",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Mechanics",
+              "Study of motion and forces. Includes classical mechanics and quantum mechanics."
+            ],
+            [
+              "Acoustics",
+              "Study of sound: production, transmission, and effects."
+            ],
+            [
+              "Optics",
+              "Study of light, its properties, and propagation."
+            ],
+            [
+              "Thermodynamics",
+              "Study of heat, temperature, and energy transfer."
+            ],
+            [
+              "Electromagnetism",
+              "Study of electric and magnetic phenomena, including electromagnetic waves."
+            ],
+            [
+              "Nuclear Physics",
+              "Study of atomic nuclei: structure, properties, and reactions."
+            ],
+            [
+              "Astrophysics",
+              "Application of physics to stars, planets, galaxies, and cosmic phenomena."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Related Fields to Physics",
+        "body": "Physics is foundational in many scientific and professional fields.",
+        "table": {
+          "headers": [
+            "Field",
+            "How It Relates to Physics"
+          ],
+          "rows": [
+            [
+              "Chemistry",
+              "Atomic and molecular behavior is explained by physical principles."
+            ],
+            [
+              "Engineering",
+              "Design and performance of machines, buildings, and systems rely on physics."
+            ],
+            [
+              "Geology",
+              "Earth processes such as heat flow and seismic motion use physical analysis."
+            ],
+            [
+              "Biophysics",
+              "Uses physics tools and models to study biological systems."
+            ],
+            [
+              "Geophysics",
+              "Applies physics to understand Earth structure and behavior."
+            ],
+            [
+              "Medical Physics",
+              "Supports imaging and treatment technologies like X-ray, MRI, and ultrasound."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Historical Issues and Key Contributors",
+        "body": "Physics developed from classical physics to modern physics through major discoveries. This changed science, technology, and society.\n\nClassical physics dominated from the Renaissance to the late 19th century. In the 20th century, modern physics transformed ideas about matter, energy, and the universe.",
+        "table": {
+          "headers": [
+            "Scientist",
+            "Contribution"
+          ],
+          "rows": [
+            [
+              "Galileo Galilei (1564-1642)",
+              "Pioneer of observational astronomy and experimental scientific method."
+            ],
+            [
+              "Isaac Newton (1643-1727)",
+              "Formulated laws of motion and universal gravitation."
+            ],
+            [
+              "Michael Faraday (1791-1867)",
+              "Advanced electromagnetism and electromagnetic induction."
+            ],
+            [
+              "James Prescott Joule (1818-1889)",
+              "Linked heat and mechanical work; helped establish energy conservation."
+            ],
+            [
+              "Marie Curie (1867-1934)",
+              "Pioneered research on radioactivity; discovered polonium and radium."
+            ],
+            [
+              "Albert Einstein (1879-1955)",
+              "Developed relativity and contributed to quantum theory."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-2",
+    "title": "UNIT 2: Physical Quantities",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 2: Physical Quantities",
+    "summary": "Scales, standards, SI units, significant figures, measurement practice, and unit conversion.",
+    "sections": [
+      {
+        "heading": "Scales and Standards",
+        "body": "In physics, a scale is a system used to measure or compare levels of a variable. Four common data scales are nominal, ordinal, interval, and ratio. Physics measurements mostly use ratio scales because they allow meaningful multiplication and division and include a true zero.",
+        "table": {
+          "headers": [
+            "Scale",
+            "Main Feature",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Nominal",
+              "Labels only, no numerical ranking",
+              "Gender, hair color"
+            ],
+            [
+              "Ordinal",
+              "Rank order",
+              "Class rank"
+            ],
+            [
+              "Interval",
+              "Equal intervals, no true zero",
+              "Temperature in Celsius"
+            ],
+            [
+              "Ratio",
+              "Equal intervals and true zero",
+              "Length, time, mass, temperature in Kelvin"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Fundamental SI Quantities and Units",
+        "body": "Physics uses internationally accepted standards. Seven basic quantities are used to build all other measurements.",
+        "table": {
+          "headers": [
+            "Basic Quantity",
+            "Symbol",
+            "SI Unit",
+            "Unit Symbol"
+          ],
+          "rows": [
+            [
+              "Length",
+              "L",
+              "meter",
+              "m"
+            ],
+            [
+              "Mass",
+              "m",
+              "kilogram",
+              "kg"
+            ],
+            [
+              "Time",
+              "t",
+              "second",
+              "s"
+            ],
+            [
+              "Temperature",
+              "T",
+              "kelvin",
+              "K"
+            ],
+            [
+              "Current",
+              "I",
+              "ampere",
+              "A"
+            ],
+            [
+              "Amount of substance",
+              "n",
+              "mole",
+              "mol"
+            ],
+            [
+              "Luminous intensity",
+              "Iv",
+              "candela",
+              "cd"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Scientific Notation and Significant Figures",
+        "body": "Scientific notation writes very large or very small numbers in the form d x 10^n, where 1 <= d < 10 and n is an integer.\n\nSignificant figures include:\n- all non-zero digits\n- zeros between non-zero digits\n- trailing zeros in a decimal measurement\n\nExamples:\n- 2000 has 1 significant figure\n- 2000.0 has 5 significant figures\n- 0.000345 has 3 significant figures"
+      },
+      {
+        "heading": "Prefixes and Multipliers",
+        "body": "Prefixes are attached before unit names to represent powers of ten with no space between prefix and unit.",
+        "table": {
+          "headers": [
+            "Prefix",
+            "Symbol",
+            "Multiplier",
+            "Exponent"
+          ],
+          "rows": [
+            [
+              "tera",
+              "T",
+              "1,000,000,000,000",
+              "10^12"
+            ],
+            [
+              "giga",
+              "G",
+              "1,000,000,000",
+              "10^9"
+            ],
+            [
+              "mega",
+              "M",
+              "1,000,000",
+              "10^6"
+            ],
+            [
+              "kilo",
+              "k",
+              "1,000",
+              "10^3"
+            ],
+            [
+              "deci",
+              "d",
+              "0.1",
+              "10^-1"
+            ],
+            [
+              "centi",
+              "c",
+              "0.01",
+              "10^-2"
+            ],
+            [
+              "milli",
+              "m",
+              "0.001",
+              "10^-3"
+            ],
+            [
+              "micro",
+              "u",
+              "0.000001",
+              "10^-6"
+            ],
+            [
+              "nano",
+              "n",
+              "0.000000001",
+              "10^-9"
+            ],
+            [
+              "pico",
+              "p",
+              "0.000000000001",
+              "10^-12"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Measurement, Classification, and Conversion",
+        "body": "Measurement compares an unknown quantity with a known standard unit. Key tools include ruler/tape for length, beam balance for mass, and stopwatch or clock for time.\n\nPhysical quantities are classified as:\n- fundamental (directly measured)\n- derived (computed from basic quantities)\n- scalar (magnitude only)\n- vector (magnitude and direction)\n\nCommon conversion relations:",
+        "table": {
+          "headers": [
+            "Quantity",
+            "Conversion"
+          ],
+          "rows": [
+            [
+              "Length",
+              "1 km = 1000 m, 1 m = 100 cm, 1 m = 1000 mm"
+            ],
+            [
+              "Mass",
+              "1 kg = 1000 g, 1 g = 1000 mg, 1000 kg = 1 tonne"
+            ],
+            [
+              "Time",
+              "1 min = 60 s, 1 hr = 60 min, 1 day = 24 hr"
+            ],
+            [
+              "Vector vs scalar",
+              "distance is scalar, displacement is vector; speed is scalar, velocity is vector"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Common Derived Quantities",
+        "body": "Derived quantities are calculated from basic quantities.",
+        "table": {
+          "headers": [
+            "Physical Quantity",
+            "Symbol",
+            "Formula",
+            "Unit"
+          ],
+          "rows": [
+            [
+              "Speed",
+              "v",
+              "distance/time",
+              "m/s"
+            ],
+            [
+              "Density",
+              "rho",
+              "mass/volume",
+              "kg/m^3"
+            ],
+            [
+              "Acceleration",
+              "a",
+              "velocity/time",
+              "m/s^2"
+            ],
+            [
+              "Force",
+              "F",
+              "mass x acceleration",
+              "N"
+            ],
+            [
+              "Work",
+              "W",
+              "force x distance",
+              "J"
+            ],
+            [
+              "Pressure",
+              "P",
+              "force/area",
+              "Pa"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practice and Workout Problems",
+        "body": "Practice converting and solving measurement tasks:\n- Convert 200 m into cm, km, and mm.\n- Convert 10 nm into m, mm, and um.\n- A beam balance has 1.5 kg, 500 g, 250 g, 25 g, and 0.8 g on one side. Find total mass in g and kg.\n- Convert 2 hr, 0.5 hr, and 3/5 hr into seconds.\n- Convert 25.5 years into months.\n- Convert 8 m 40 cm into cm.\n- Find minutes in 3 days.\n- If one ceramic tile is 0.25 m^2, how many tiles cover 40 m^2?\n- Express 1.5 x 10^11 m using a suitable SI prefix."
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-3",
+    "title": "UNIT 3: Motion in a Straight Line (Kinematics)",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 3: Motion in a Straight Line (Kinematics)",
+    "summary": "Position, displacement, speed, velocity, acceleration, uniform motion, and motion graphs.",
+    "sections": [
+      {
+        "heading": "Position, Distance, and Displacement",
+        "body": "Motion is a continuous change in position relative to a reference frame. A body is at rest if position does not change with time in that frame, and in motion if position changes.\n\nFor one-dimensional motion, we usually use the x-axis and origin as a fixed reference point.\n\nDisplacement formula: Delta S = S_f - S_i"
+      },
+      {
+        "heading": "Distance vs Displacement",
+        "body": "Distance is the total path length traveled; displacement is the shortest directed change from initial to final position.",
+        "table": {
+          "headers": [
+            "Distance",
+            "Displacement"
+          ],
+          "rows": [
+            [
+              "Length of actual path traveled",
+              "Shortest directed change between initial and final points"
+            ],
+            [
+              "Scalar quantity",
+              "Vector quantity"
+            ],
+            [
+              "Depends on path",
+              "Depends only on initial and final positions"
+            ],
+            [
+              "Always greater than or equal to magnitude of displacement",
+              "Magnitude always less than or equal to distance"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Speed and Velocity",
+        "body": "Speed is scalar and describes how fast an object moves: v = distance/time.\nAverage speed = total distance / total time.\nInstantaneous speed is speed at a specific instant (for very small Delta t).\n\nVelocity includes direction:\nAverage velocity = Delta S / Delta t\nInstantaneous velocity is velocity at a specific moment."
+      },
+      {
+        "heading": "Acceleration and Uniform Motion",
+        "body": "Acceleration is the rate of change of velocity and is a vector quantity:\na = (v - u) / (t_f - t_i)\n\nIf velocity decreases, acceleration is negative (deceleration).\nUniform rectilinear motion means constant velocity in a straight line, so acceleration is zero."
+      },
+      {
+        "heading": "Graphical Representation of Motion",
+        "body": "Position-time (S-t) graph:\n- slope gives velocity\n\nVelocity-time (v-t) graph:\n- slope gives acceleration\n- area under graph gives displacement (or distance for non-negative speed)",
+        "table": {
+          "headers": [
+            "Position (m)",
+            "Time (s)"
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "1"
+            ],
+            [
+              "10",
+              "2"
+            ],
+            [
+              "15",
+              "3"
+            ],
+            [
+              "20",
+              "4"
+            ],
+            [
+              "25",
+              "5"
+            ],
+            [
+              "30",
+              "6"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Speed Limit and Traffic Safety",
+        "body": "Speed limits are part of a broader traffic safety system that also includes driver training, road design, vehicle safety features, and law enforcement.\n\nDrivers must follow posted speed limits and adjust speed to traffic and weather conditions."
+      },
+      {
+        "heading": "Worked Examples for Unit 3",
+        "body": "Sample applications:\n- A cyclist rides 3 km west, then 2 km east. Find distance and displacement.\n- A car travels 80 km in 1 hr 30 min. Find average speed in m/s.\n- A student walks at 5 m/s for 1.5 hr. Find distance covered.\n- Convert 120 km/h to m/s.\n- A student has displacement 360 m north in 180 s. Find average velocity.\n- A train accelerates from rest to 36 km/h in 20 s. Find acceleration.\n- A car changes speed from 7.0 m/s to 12.0 m/s at 2.5 m/s^2. Find time."
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-4",
+    "title": "UNIT 4: Force, Work, Energy, and Power",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 4: Force, Work, Energy, and Power",
+    "summary": "Force, Newton's laws, friction, work, energy, and power with core formulas.",
+    "sections": [
+      {
+        "heading": "The Concept of Force",
+        "body": "A force is a push or pull that can change an object's state of motion or deform it. Since force has magnitude and direction, it is a vector quantity.\n\nUnit of force: newton (N), where 1 N = 1 kg.m/s^2."
+      },
+      {
+        "heading": "Contact and Non-Contact Forces",
+        "body": "Some forces act by touching (contact), while others act at a distance (non-contact).",
+        "table": {
+          "headers": [
+            "Type",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "Contact forces",
+              "Applied force, normal force, friction, spring force"
+            ],
+            [
+              "Non-contact forces",
+              "Gravitational force, magnetic force, electric force"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Newton's Laws of Motion",
+        "body": "Newton's laws explain rest, motion, and acceleration relationships.",
+        "table": {
+          "headers": [
+            "Law",
+            "Statement",
+            "Key Idea"
+          ],
+          "rows": [
+            [
+              "First Law",
+              "A body remains at rest or in uniform straight-line motion unless acted on by an unbalanced force.",
+              "Inertia"
+            ],
+            [
+              "Second Law",
+              "Acceleration is proportional to net force and inversely proportional to mass.",
+              "F = ma"
+            ],
+            [
+              "Third Law",
+              "Every action has an equal and opposite reaction.",
+              "F_12 = -F_21"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Weight, Friction, and Motion",
+        "body": "Weight is gravitational force: W = mg. Mass is constant, but weight changes with local gravity.\n\nFriction opposes motion and depends on surface type and normal force.\n- static friction: before sliding starts\n- kinetic friction: during sliding/rolling"
+      },
+      {
+        "heading": "Work, Energy, and Power",
+        "body": "Work is done when a force causes displacement in the direction of force: W = F_parallel x S.\n\nEnergy is the ability to do work.\n- Kinetic energy: E_k = 1/2 mv^2\n- Gravitational potential energy: E_p = mgh\n- Mechanical energy: E_m = E_k + E_p\n\nPower is rate of doing work: P = W/t = E/t. Unit: watt (W), where 1 W = 1 J/s."
+      },
+      {
+        "heading": "Worked Examples for Unit 4",
+        "body": "Practice tasks:\n- A 10 N force acts on a 2 kg block. Find acceleration.\n- A 100 N force causes acceleration 2 m/s^2. Find mass.\n- Find weight of a 10 kg body on Earth.\n- A 60 N force moves a box 12 m (parallel force). Find work done.\n- Find vertical force needed to lift a load 3 m if work is 600 J.\n- A 0.2 kg ball moves at 20 m/s. Find kinetic energy.\n- Find speed of a 1 kg ball with kinetic energy 50 J.\n- Find potential energy of 30 kg at height 50 m (g = 10 m/s^2).\n- A machine lifts 100 kg through 5 m in 2 s. Find power.\n- A crane does 1.5 x 10^5 J in 10 s. Find power."
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-5",
+    "title": "UNIT 5: Simple Machines",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 5: Simple Machines",
+    "summary": "Core idea: Making work easier.",
+    "sections": [
+      {
+        "heading": "Types of Simple Machines",
+        "body": "Lever, pulley, inclined plane, wheel and axle, and screw with practical classroom examples."
+      },
+      {
+        "heading": "Mechanical Advantage and Velocity Ratio",
+        "body": "Understand MA and VR to compare effort, load, and movement in machines."
+      },
+      {
+        "heading": "Efficiency of Machines",
+        "body": "Explain why no real machine is 100 percent efficient due to losses such as friction."
+      },
+      {
+        "heading": "Real-Life Applications",
+        "body": "Identify simple machines in tools, transport, construction, and household devices."
+      },
+      {
+        "heading": "Mastery Goal",
+        "body": "Analyze how machines reduce effort and improve efficiency."
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-6",
+    "title": "UNIT 6: Mechanical Oscillations and Sound Waves",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 6: Mechanical Oscillations and Sound Waves",
+    "summary": "Core idea: Motion that repeats and travels.",
+    "sections": [
+      {
+        "heading": "Oscillations",
+        "body": "Periodic motion, frequency, period, and an introduction to simple harmonic motion."
+      },
+      {
+        "heading": "Wave Types and Properties",
+        "body": "Transverse and longitudinal waves, and key properties: wavelength, frequency, and speed."
+      },
+      {
+        "heading": "Sound Waves",
+        "body": "Production and transmission of sound, speed of sound, and echo as reflection of sound waves."
+      },
+      {
+        "heading": "Energy Transfer",
+        "body": "How mechanical waves carry energy without transferring matter over long distances."
+      },
+      {
+        "heading": "Mastery Goal",
+        "body": "Explain wave behavior and sound using the correct wave concepts."
+      }
+    ]
+  },
+  {
+    "id": "g9-physics-unit-7",
+    "title": "UNIT 7: Temperature and Thermometry",
+    "subject": "Physics",
+    "grade": "Grade 9",
+    "unit": "UNIT 7: Temperature and Thermometry",
+    "summary": "Core idea: Heat and temperature behavior.",
+    "sections": [
+      {
+        "heading": "Heat and Temperature",
+        "body": "Differentiate temperature from heat and relate both to particle motion and energy transfer."
+      },
+      {
+        "heading": "Thermometers and Scales",
+        "body": "Types and uses of thermometers and reading temperature in Celsius and Kelvin scales."
+      },
+      {
+        "heading": "Thermal Expansion",
+        "body": "How solids, liquids, and gases expand when heated and contract when cooled."
+      },
+      {
+        "heading": "Heat Transfer",
+        "body": "Conduction, convection, and radiation with examples from home and industry."
+      },
+      {
+        "heading": "Mastery Goal",
+        "body": "Apply thermometry and heat transfer ideas to explain everyday thermal phenomena."
+      }
+    ]
+  },
+  {
+    "id": "newton-laws",
+    "title": "Newton's Laws of Motion",
+    "subject": "Physics",
+    "grade": "Grade 10",
+    "summary": "Explore Isaac Newton's three laws and how they describe motion in our everyday world.",
+    "sections": [
+      {
+        "heading": "First Law - Inertia",
+        "body": "An object stays at rest or continues in motion unless acted on by an outside force. This is why a book stays still until you push it."
+      },
+      {
+        "heading": "Second Law - Force and Acceleration",
+        "body": "Force equals mass times acceleration (F = m x a). A stronger force or lighter mass causes more acceleration."
+      },
+      {
+        "heading": "Third Law - Action and Reaction",
+        "body": "For every action, there is an equal and opposite reaction. When you jump, your legs push the ground and the ground pushes you up."
+      }
+    ]
+  },
+  {
+    "id": "ecosystems",
+    "title": "Ecosystems and Food Chains",
+    "subject": "Biology",
+    "grade": "Grade 9",
+    "summary": "Understand how living organisms interact with each other and their environment.",
+    "sections": [
+      {
+        "heading": "What is an Ecosystem?",
+        "body": "An ecosystem includes plants, animals, and the environment. Everything in the system depends on each other for energy and resources."
+      },
+      {
+        "heading": "Producers and Consumers",
+        "body": "Producers, like green plants, make their own food using sunlight. Consumers eat producers or other animals to get energy."
+      },
+      {
+        "heading": "Food Chains and Balance",
+        "body": "A food chain shows who eats whom. When one part of the chain changes, it affects the entire ecosystem."
+      }
+    ]
+  },
+  {
+    "id": "cell-structure",
+    "title": "Cell Structure and Function",
+    "subject": "Biology",
+    "grade": "Grade 10",
+    "summary": "Learn about the basic unit of life - the cell.",
+    "sections": [
+      {
+        "heading": "Introduction to Cells",
+        "body": "Cells are the building blocks of all living things."
+      },
+      {
+        "heading": "Cell Parts",
+        "body": "Cells have different parts like the nucleus, mitochondria, and cell membrane, each with specific functions."
+      },
+      {
+        "heading": "Plant vs Animal Cells",
+        "body": "Plant cells have cell walls and chloroplasts, while animal cells do not."
+      }
+    ]
+  },
+  {
+    "id": "chemical-reactions",
+    "title": "Chemical Reactions",
+    "subject": "Chemistry",
+    "grade": "Grade 11",
+    "summary": "Introduction to chemical reactions and equations.",
+    "sections": [
+      {
+        "heading": "What are Chemical Reactions?",
+        "body": "Chemical reactions involve the transformation of substances."
+      },
+      {
+        "heading": "Reactants and Products",
+        "body": "Reactants are starting materials, products are what you end up with."
+      },
+      {
+        "heading": "Types of Reactions",
+        "body": "Synthesis, decomposition, combustion, and replacement reactions."
+      }
+    ]
+  },
+  {
+    "id": "periodic-table",
+    "title": "The Periodic Table",
+    "subject": "Chemistry",
+    "grade": "Grade 12",
+    "summary": "Understanding the organization of elements.",
+    "sections": [
+      {
+        "heading": "Elements and the Periodic Table",
+        "body": "The periodic table arranges elements by atomic number."
+      },
+      {
+        "heading": "Groups and Periods",
+        "body": "Elements in the same group have similar properties."
+      },
+      {
+        "heading": "Atomic Structure",
+        "body": "Elements are made of protons, neutrons, and electrons."
+      }
+    ]
+  },
+  {
+    "id": "grammar-basics",
+    "title": "Grammar Basics",
+    "subject": "English",
+    "grade": "Grade 9",
+    "summary": "Fundamental rules of English grammar.",
+    "sections": [
+      {
+        "heading": "Parts of Speech",
+        "body": "Nouns, verbs, adjectives, etc."
+      },
+      {
+        "heading": "Sentence Structure",
+        "body": "Subject, verb, object."
+      },
+      {
+        "heading": "Punctuation",
+        "body": "Periods, commas, question marks."
+      }
+    ]
+  },
+  {
+    "id": "literature-analysis",
+    "title": "Literature Analysis",
+    "subject": "English",
+    "grade": "Grade 10",
+    "summary": "How to analyze literary works.",
+    "sections": [
+      {
+        "heading": "Themes and Motifs",
+        "body": "Identifying themes in literature."
+      },
+      {
+        "heading": "Characters and Plot",
+        "body": "Understanding story elements."
+      },
+      {
+        "heading": "Literary Devices",
+        "body": "Metaphors, similes, symbolism."
+      }
+    ]
+  },
+  {
+    "id": "algebra-basics",
+    "title": "Algebra Basics",
+    "subject": "Mathematics",
+    "grade": "Grade 9",
+    "summary": "Introduction to algebraic concepts.",
+    "sections": [
+      {
+        "heading": "Variables and Equations",
+        "body": "Understanding variables and solving equations."
+      },
+      {
+        "heading": "Linear Equations",
+        "body": "Solving for unknowns."
+      },
+      {
+        "heading": "Word Problems",
+        "body": "Translating words into math."
+      }
+    ]
+  },
+  {
+    "id": "geometry-fundamentals",
+    "title": "Geometry Fundamentals",
+    "subject": "Mathematics",
+    "grade": "Grade 10",
+    "summary": "Basic geometry concepts.",
+    "sections": [
+      {
+        "heading": "Shapes and Angles",
+        "body": "Triangles, circles, and angles."
+      },
+      {
+        "heading": "Area and Perimeter",
+        "body": "Measuring shapes."
+      },
+      {
+        "heading": "Coordinate Geometry",
+        "body": "Points, lines, and planes."
+      }
+    ]
+  },
+  {
+    "id": "programming-intro",
+    "title": "Introduction to Programming",
+    "subject": "Programming",
+    "grade": "Grade 11",
+    "summary": "Basics of programming concepts.",
+    "sections": [
+      {
+        "heading": "What is Programming?",
+        "body": "Programming is writing instructions for computers."
+      },
+      {
+        "heading": "Algorithms",
+        "body": "Step-by-step procedures."
+      },
+      {
+        "heading": "Programming Languages",
+        "body": "Different ways to write code."
+      }
+    ]
+  },
+  {
+    "id": "python-basics",
+    "title": "Python Basics",
+    "subject": "Programming",
+    "grade": "Grade 12",
+    "summary": "Learning the fundamentals of Python.",
+    "sections": [
+      {
+        "heading": "Variables and Data Types",
+        "body": "Storing and manipulating data in Python."
+      },
+      {
+        "heading": "Basic Operations",
+        "body": "Math, strings, and logic."
+      },
+      {
+        "heading": "Control Structures",
+        "body": "If statements and loops."
+      }
+    ]
+  },
+  {
+    "id": "projectile-motion",
+    "title": "Projectile Motion",
+    "subject": "Physics",
+    "grade": "Grade 11",
+    "summary": "It is the motion of an object thrown into the air under gravity only (no air resistance).\r\nThe motion splits into two parts:\r\nHorizontal → constant velocity\r\nVertical → accelerated motion due to gravity\r\nThe path followed is a parabola.\r\nKey formulas:\r\nTime of flight: \r\n𝑇\r\n=\r\n2\r\n𝑣\r\n0\r\nsin\r\n⁡\r\n𝜃\r\n𝑔\r\nT=\r\ng\r\n2v\r\n0\r\n\t​\r\n\r\nsinθ\r\n\t​\r\n\r\nMaximum height: \r\n𝐻\r\n=\r\n𝑣\r\n0\r\n2\r\nsin\r\n⁡\r\n2\r\n𝜃\r\n2\r\n𝑔\r\nH=\r\n2g\r\nv\r\n0\r\n2\r\n\t​\r\n\r\nsin\r\n2\r\nθ\r\n\t​\r\n\r\nRange: \r\n𝑅\r\n=\r\n𝑣\r\n0\r\n2\r\nsin\r\n⁡\r\n(\r\n2\r\n𝜃\r\n)\r\n𝑔\r\nR=\r\ng\r\nv\r\n0\r\n2\r\n\t​\r\n\r\nsin(2θ)\r\n\t​\r\n\r\nMaximum range occurs at 45°, and complementary angles (like 30° and 60°) give the same range.",
+    "sections": [
+      {
+        "heading": "projectile motion",
+        "body": "Projectile motion is one of those topics that looks simple at first—but once you dig in, it becomes really powerful (and actually fun). Let’s walk through it clearly and build your intuition step by step.\r\n\r\n---\r\n\r\n## 🌍 What is Projectile Motion?\r\n\r\nProjectile motion is the motion of an object that is thrown or launched into the air and then moves under the influence of gravity alone (ignoring air resistance).\r\n\r\nExamples:\r\n\r\n* A ball thrown into the air ⚽\r\n* A basketball shot 🏀\r\n* A stone thrown at an angle\r\n\r\n---\r\n\r\n## 🧠 Key Idea (Very Important)\r\n\r\nProjectile motion can be split into **two independent motions**:\r\n\r\n1. **Horizontal motion (x-direction)** → constant velocity\r\n2. **Vertical motion (y-direction)** → accelerated motion due to gravity\r\n\r\nGravity only affects the vertical direction!\r\n\r\n---\r\n\r\n## 📐 Main Equations\r\n\r\n### 1. Horizontal Motion\r\n\r\nNo acceleration:\r\n\r\n[\r\nx = v_0 \\cos(\\theta) \\cdot t\r\n]\r\n\r\n---\r\n\r\n### 2. Vertical Motion\r\n\r\nAcceleration = ( g ) downward:\r\n\r\n[\r\ny = v_0 \\sin(\\theta) \\cdot t - \\frac{1}{2} g t^2\r\n]\r\n\r\n---\r\n\r\n## 📊 Trajectory Equation (Path)\r\n\r\nThis gives the shape of the path (a parabola):\r\n\r\ngenui{\"math_block_widget_always_prefetch_v2\":{\"content\":\"y = x\\tan(\\theta) - \\frac{g x^2}{2 v_0^2 \\cos^2(\\theta)}\"}}\r\n\r\n👉 This is why projectiles always follow a **parabolic path**.\r\n\r\n---\r\n\r\n## 🚀 Important Quantities\r\n\r\n### 1. Time of Flight (Total time in air)\r\n\r\n[\r\nT = \\frac{2 v_0 \\sin(\\theta)}{g}\r\n]\r\n\r\n---\r\n\r\n### 2. Maximum Height\r\n\r\n[\r\nH = \\frac{v_0^2 \\sin^2(\\theta)}{2g}\r\n]\r\n\r\n---\r\n\r\n### 3. Range (Horizontal Distance)\r\n\r\n[\r\nR = \\frac{v_0^2 \\sin(2\\theta)}{g}\r\n]\r\n\r\n---\r\n\r\n## 🎯 Important Concepts\r\n\r\n### ✔️ 1. Angle for Maximum Range\r\n\r\n* Maximum range occurs at **45°**\r\n\r\n---\r\n\r\n### ✔️ 2. Same Range Angles\r\n\r\n* Angles like **30° and 60°** give the same range\r\n\r\n---\r\n\r\n### ✔️ 3. At Maximum Height\r\n\r\n* Vertical velocity = 0\r\n* Horizontal velocity stays the same\r\n\r\n---\r\n\r\n## ⚠️ Common Mistakes Students Make\r\n\r\n* Mixing up sin and cos (very common 😄)\r\n* Forgetting that **horizontal velocity is constant**\r\n* Using ( g = 9.8 , m/s^2 ) with wrong sign (usually take downward as negative)\r\n\r\n---\r\n\r\n## 🧩 Small Example\r\n\r\nIf a ball is thrown at angle ( \\theta ) with speed ( v_0 ):\r\n\r\n* Horizontal velocity = ( v_0 \\cos\\theta )\r\n* Vertical velocity = ( v_0 \\sin\\theta )\r\n\r\nThen solve x and y separately.\r\n\r\n---\r\n\r\n## 💡 Why This Topic Matters\r\n\r\nProjectile motion connects to:\r\n\r\n* Engineering (rockets, missiles 🚀)\r\n* Sports (shooting angles ⚽🏀)\r\n* Physics exams (very common problem type!)"
+      }
+    ]
+  },
+  {
+    "id": "projectile-motion-summary",
+    "title": "Projectile Motion Summary",
+    "subject": "Physics",
+    "grade": "Grade 11",
+    "summary": "Here’s a clean, quick summary of **projectile motion**:\r\n\r\n* It is the motion of an object thrown into the air under **gravity only** (no air resistance).\r\n* The motion splits into two parts:\r\n\r\n  * **Horizontal** → constant velocity\r\n  * **Vertical** → accelerated motion due to gravity\r\n* The path followed is a **parabola**.\r\n* Key formulas:\r\n\r\n  * Time of flight: ( T = \\frac{2v_0 \\sin\\theta}{g} )\r\n  * Maximum height: ( H = \\frac{v_0^2 \\sin^2\\theta}{2g} )\r\n  * Range: ( R = \\frac{v_0^2 \\sin(2\\theta)}{g} )\r\n* Maximum range occurs at **45°**, and complementary angles (like 30° and 60°) give the same range.\r\n\r\nIf you remember just one thing: 👉 treat x and y motions separately.",
+    "sections": [
+      {
+        "heading": "projectile motion",
+        "body": "Projectile motion is one of those topics that looks simple at first—but once you dig in, it becomes really powerful (and actually fun). Let’s walk through it clearly and build your intuition step by step.\r\n\r\n---\r\n\r\n## 🌍 What is Projectile Motion?\r\n\r\nProjectile motion is the motion of an object that is thrown or launched into the air and then moves under the influence of gravity alone (ignoring air resistance).\r\n\r\nExamples:\r\n\r\n* A ball thrown into the air ⚽\r\n* A basketball shot 🏀\r\n* A stone thrown at an angle\r\n\r\n---\r\n\r\n## 🧠 Key Idea (Very Important)\r\n\r\nProjectile motion can be split into **two independent motions**:\r\n\r\n1. **Horizontal motion (x-direction)** → constant velocity\r\n2. **Vertical motion (y-direction)** → accelerated motion due to gravity\r\n\r\nGravity only affects the vertical direction!\r\n\r\n---\r\n\r\n## 📐 Main Equations\r\n\r\n### 1. Horizontal Motion\r\n\r\nNo acceleration:\r\n\r\n[\r\nx = v_0 \\cos(\\theta) \\cdot t\r\n]\r\n\r\n---\r\n\r\n### 2. Vertical Motion\r\n\r\nAcceleration = ( g ) downward:\r\n\r\n[\r\ny = v_0 \\sin(\\theta) \\cdot t - \\frac{1}{2} g t^2\r\n]\r\n\r\n---\r\n\r\n## 📊 Trajectory Equation (Path)\r\n\r\nThis gives the shape of the path (a parabola):\r\n\r\ngenui{\"math_block_widget_always_prefetch_v2\":{\"content\":\"y = x\\tan(\\theta) - \\frac{g x^2}{2 v_0^2 \\cos^2(\\theta)}\"}}\r\n\r\n👉 This is why projectiles always follow a **parabolic path**.\r\n\r\n---\r\n\r\n## 🚀 Important Quantities\r\n\r\n### 1. Time of Flight (Total time in air)\r\n\r\n[\r\nT = \\frac{2 v_0 \\sin(\\theta)}{g}\r\n]\r\n\r\n---\r\n\r\n### 2. Maximum Height\r\n\r\n[\r\nH = \\frac{v_0^2 \\sin^2(\\theta)}{2g}\r\n]\r\n\r\n---\r\n\r\n### 3. Range (Horizontal Distance)\r\n\r\n[\r\nR = \\frac{v_0^2 \\sin(2\\theta)}{g}\r\n]\r\n\r\n---\r\n\r\n## 🎯 Important Concepts\r\n\r\n### ✔️ 1. Angle for Maximum Range\r\n\r\n* Maximum range occurs at **45°**\r\n\r\n---\r\n\r\n### ✔️ 2. Same Range Angles\r\n\r\n* Angles like **30° and 60°** give the same range\r\n\r\n---\r\n\r\n### ✔️ 3. At Maximum Height\r\n\r\n* Vertical velocity = 0\r\n* Horizontal velocity stays the same\r\n\r\n---\r\n\r\n## ⚠️ Common Mistakes Students Make\r\n\r\n* Mixing up sin and cos (very common 😄)\r\n* Forgetting that **horizontal velocity is constant**\r\n* Using ( g = 9.8 , m/s^2 ) with wrong sign (usually take downward as negative)\r\n\r\n---\r\n\r\n## 🧩 Small Example\r\n\r\nIf a ball is thrown at angle ( \\theta ) with speed ( v_0 ):\r\n\r\n* Horizontal velocity = ( v_0 \\cos\\theta )\r\n* Vertical velocity = ( v_0 \\sin\\theta )\r\n\r\nThen solve x and y separately.\r\n\r\n---\r\n\r\n## 💡 Why This Topic Matters\r\n\r\nProjectile motion connects to:\r\n\r\n* Engineering (rockets, missiles 🚀)\r\n* Sports (shooting angles ⚽🏀)\r\n* Physics exams (very common problem type!)"
+      }
+    ]
+  }
+]

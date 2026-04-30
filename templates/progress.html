@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Progress Tracker{% endblock %}
+{% block content %}
+<section class="detail progress-page">
+  <h1>Progress Tracker</h1>
+  <div class="summary-grid">
+    <div class="summary-card">
+      <h2>Completed Lessons</h2>
+      <p>{{ overall.completed_lessons }} / {{ overall.total_lessons }}</p>
+    </div>
+    <div class="summary-card">
+      <h2>Average Score</h2>
+      <p>{{ overall.average_score }}%</p>
+    </div>
+    <div class="summary-card">
+      <h2>Viewing</h2>
+      <p>{{ 'All Grades' if show_all_grades else selected_grade }}</p>
+    </div>
+  </div>
+
+  <div class="progress-controls">
+    <div class="progress-grade-switcher" aria-label="Choose grade to view">
+      {% for grade in grade_options %}
+      <a class="button progress-chip {% if not show_all_grades and grade == selected_grade %}active{% endif %}" href="{{ url_for('progress', grade=grade) }}">{{ grade }}</a>
+      {% endfor %}
+    </div>
+    <div class="progress-view-toggle" aria-label="Toggle progress scope">
+      <a class="button secondary progress-view-button {% if not show_all_grades %}active{% endif %}" href="{{ url_for('progress', grade=selected_grade) }}">Chosen grade</a>
+      <a class="button secondary progress-view-button {% if show_all_grades %}active{% endif %}" href="{{ url_for('progress', grade=selected_grade, view='all') }}">All grades</a>
+    </div>
+    <div class="progress-download" aria-label="Download progress">
+      <a class="button secondary" href="{{ url_for('export_progress', grade=selected_grade, view='all' if show_all_grades else 'grade') }}">Download Excel</a>
+    </div>
+  </div>
+
+  <div class="grade-table-stack">
+    {% for group in grade_groups %}
+    <section class="grade-table-card">
+      <div class="grade-table-header">
+        <div>
+          <p class="grade-kicker">Performance log</p>
+          <h2>{{ group.grade }}</h2>
+        </div>
+        <div class="grade-table-meta">
+          <span>{{ group.completed_lessons }} completed</span>
+          <span>{{ group.average_score }}% average</span>
+          <span>{{ group.entries|length }} lessons</span>
+        </div>
+      </div>
+
+      {% if group.entries %}
+        {% for subject_group in group.subjects %}
+        <div class="subject-block">
+          <div class="subject-header">
+            <div>
+              <p class="subject-kicker">Subject</p>
+              <h3>{{ subject_group.subject }}</h3>
+            </div>
+            <div class="subject-meta">
+              <span>{{ subject_group.completed_lessons }} completed</span>
+              <span>{{ subject_group.average_score }}% average</span>
+              <span>{{ subject_group.entries|length }} lessons</span>
+            </div>
+          </div>
+
+          <div class="progress-table-wrap">
+            <table class="progress-results-table">
+              <thead>
+                <tr>
+                  <th>Lesson</th>
+                  <th>Status</th>
+                  <th>Score</th>
+                  <th>Attempts</th>
+                  <th>Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for entry in subject_group.entries %}
+                <tr>
+                  <td data-label="Lesson">{{ entry.title }}</td>
+                  <td data-label="Status">
+                    <span class="progress-status {{ 'complete' if entry.completed else 'pending' }}">{{ 'Completed' if entry.completed else 'Pending' }}</span>
+                  </td>
+                  <td data-label="Score">
+                    <span class="score-pill {% if entry.score is none %}empty{% endif %}">{{ entry.score if entry.score is not none else '—' }}</span>
+                  </td>
+                  <td data-label="Attempts">{{ entry.attempts }}</td>
+                  <td data-label="Updated">{{ entry.last_updated }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="progress-table-wrap">
+          <table class="progress-results-table">
+            <tbody>
+              <tr>
+                <td class="empty-state" data-label="Status">No lesson progress recorded for this grade yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+    </section>
+    {% endfor %}
+  </div>
+
+  <div class="lesson-actions">
+    <a class="button secondary" href="{{ url_for('index') }}">Back to lessons</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,524 @@
+[
+  {
+    "lesson_id": "g9-physics-unit-1",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which branch of physics focuses on motion and forces?",
+        "options": [
+          "Mechanics",
+          "Optics",
+          "Thermodynamics",
+          "Nuclear chemistry"
+        ],
+        "correct_index": 0,
+        "explanation": "Mechanics is the branch of physics that studies motion and forces."
+      },
+      {
+        "id": 2,
+        "prompt": "Why is physics important in society?",
+        "options": [
+          "It is only useful in space science",
+          "It helps develop technology, medicine, and communication",
+          "It replaces biology and chemistry",
+          "It only explains ancient inventions"
+        ],
+        "correct_index": 1,
+        "explanation": "Physics supports modern systems such as medical imaging, electronics, and communication technologies."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-2",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which of the following is a derived quantity?",
+        "options": [
+          "Length",
+          "Time",
+          "Mass",
+          "Velocity"
+        ],
+        "correct_index": 3,
+        "explanation": "Velocity is derived from length and time, so it is a derived quantity."
+      },
+      {
+        "id": 2,
+        "prompt": "What is the key difference between accuracy and precision?",
+        "options": [
+          "Accuracy is closeness to true value; precision is closeness between repeated measurements",
+          "Accuracy and precision always mean the same thing",
+          "Precision only applies to digital instruments",
+          "Accuracy is only used in chemistry"
+        ],
+        "correct_index": 0,
+        "explanation": "Accurate values are close to the true value, while precise values are consistent with each other."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-3",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which equation correctly relates initial velocity, acceleration, and time?",
+        "options": [
+          "s = vt",
+          "v = u + at",
+          "F = ma",
+          "P = W/t"
+        ],
+        "correct_index": 1,
+        "explanation": "The first kinematics equation is v = u + at."
+      },
+      {
+        "id": 2,
+        "prompt": "On a velocity-time graph, what does the slope represent?",
+        "options": [
+          "Distance",
+          "Displacement",
+          "Acceleration",
+          "Power"
+        ],
+        "correct_index": 2,
+        "explanation": "The slope of a velocity-time graph gives acceleration."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-4",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which law states that every action has an equal and opposite reaction?",
+        "options": [
+          "Newton's First Law",
+          "Newton's Second Law",
+          "Newton's Third Law",
+          "Law of conservation of mass"
+        ],
+        "correct_index": 2,
+        "explanation": "Newton's Third Law describes action-reaction force pairs."
+      },
+      {
+        "id": 2,
+        "prompt": "How do you calculate power?",
+        "options": [
+          "Power = Force x Distance",
+          "Power = Work / Time",
+          "Power = Mass x Velocity",
+          "Power = Energy x Time"
+        ],
+        "correct_index": 1,
+        "explanation": "Power is the rate of doing work, so Power = Work / Time."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-5",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which of the following is a simple machine?",
+        "options": [
+          "Lever",
+          "Battery",
+          "Thermometer",
+          "Magnet"
+        ],
+        "correct_index": 0,
+        "explanation": "A lever is one of the classic simple machines."
+      },
+      {
+        "id": 2,
+        "prompt": "What does mechanical advantage describe?",
+        "options": [
+          "How quickly a machine looks",
+          "How much a machine multiplies effort force",
+          "How much electricity a machine uses",
+          "How heavy a machine is"
+        ],
+        "correct_index": 1,
+        "explanation": "Mechanical advantage compares output force to input force and shows effort multiplication."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-6",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is the relationship between frequency and period?",
+        "options": [
+          "They are equal",
+          "Frequency = 1 / Period",
+          "Period = Frequency^2",
+          "They are unrelated"
+        ],
+        "correct_index": 1,
+        "explanation": "Frequency and period are reciprocals: f = 1/T."
+      },
+      {
+        "id": 2,
+        "prompt": "Which wave type requires a material medium and can be longitudinal?",
+        "options": [
+          "Light wave",
+          "Sound wave",
+          "X-ray",
+          "Radio wave"
+        ],
+        "correct_index": 1,
+        "explanation": "Sound is a mechanical wave and commonly travels as a longitudinal wave in air."
+      }
+    ]
+  },
+  {
+    "lesson_id": "g9-physics-unit-7",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "Which temperature scale starts at absolute zero?",
+        "options": [
+          "Celsius",
+          "Kelvin",
+          "Fahrenheit",
+          "Rankine"
+        ],
+        "correct_index": 1,
+        "explanation": "The Kelvin scale begins at absolute zero."
+      },
+      {
+        "id": 2,
+        "prompt": "Which process transfers heat through direct contact?",
+        "options": [
+          "Convection",
+          "Radiation",
+          "Conduction",
+          "Reflection"
+        ],
+        "correct_index": 2,
+        "explanation": "Conduction is heat transfer through direct contact between particles."
+      }
+    ]
+  },
+  {
+    "lesson_id": "newton-laws",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What does Newton's first law describe?",
+        "options": [
+          "How force changes motion",
+          "The relationship between energy and mass",
+          "Objects staying at rest or moving at constant speed unless forced",
+          "The strength of gravitational pull"
+        ],
+        "correct_index": 2,
+        "explanation": "Newton's first law explains inertia: objects keep their state of motion unless a force acts on them."
+      },
+      {
+        "id": 2,
+        "prompt": "If a car has more mass and the same force is applied, what happens?",
+        "options": [
+          "It accelerates more quickly",
+          "It accelerates less quickly",
+          "The force becomes stronger",
+          "The mass changes"
+        ],
+        "correct_index": 1,
+        "explanation": "Acceleration decreases when mass increases if the applied force stays the same."
+      }
+    ]
+  },
+  {
+    "lesson_id": "ecosystems",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What role do producers play in an ecosystem?",
+        "options": [
+          "They eat consumers",
+          "They make their own food",
+          "They decompose waste",
+          "They provide shelter"
+        ],
+        "correct_index": 1,
+        "explanation": "Producers, such as plants, make food through photosynthesis and support the ecosystem's energy flow."
+      },
+      {
+        "id": 2,
+        "prompt": "What is a food chain?",
+        "options": [
+          "A tool to measure energy",
+          "A sequence showing who eats whom",
+          "A list of all plants in a region",
+          "A type of habitat"
+        ],
+        "correct_index": 1,
+        "explanation": "A food chain shows a sequence of organisms where each is eaten by the next."
+      }
+    ]
+  },
+  {
+    "lesson_id": "cell-structure",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What part of the cell holds genetic material?",
+        "options": [
+          "Mitochondria",
+          "Cell membrane",
+          "Nucleus",
+          "Chloroplast"
+        ],
+        "correct_index": 2,
+        "explanation": "The nucleus contains the cell's genetic material."
+      },
+      {
+        "id": 2,
+        "prompt": "Which structure makes energy in the cell?",
+        "options": [
+          "Ribosome",
+          "Nucleus",
+          "Mitochondria",
+          "Vacuole"
+        ],
+        "correct_index": 2,
+        "explanation": "Mitochondria are the energy-producing organelles in cells."
+      }
+    ]
+  },
+  {
+    "lesson_id": "chemical-reactions",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What happens during a chemical reaction?",
+        "options": [
+          "Substances change their physical state",
+          "New substances are formed",
+          "Temperature changes only",
+          "Color changes only"
+        ],
+        "correct_index": 1,
+        "explanation": "Chemical reactions involve the transformation of substances into new substances with different properties."
+      },
+      {
+        "id": 2,
+        "prompt": "What is a reactant in a chemical reaction?",
+        "options": [
+          "The energy released",
+          "A substance that is produced",
+          "A starting material",
+          "The container used"
+        ],
+        "correct_index": 2,
+        "explanation": "Reactants are the substances that undergo change in a chemical reaction."
+      }
+    ]
+  },
+  {
+    "lesson_id": "periodic-table",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What does the periodic table organize?",
+        "options": [
+          "Planets",
+          "Chemical elements",
+          "Animal species",
+          "Weather patterns"
+        ],
+        "correct_index": 1,
+        "explanation": "The periodic table arranges chemical elements by their atomic number and properties."
+      },
+      {
+        "id": 2,
+        "prompt": "What is the atomic number?",
+        "options": [
+          "The mass of an atom",
+          "The number of protons",
+          "The number of neutrons",
+          "The number of electrons"
+        ],
+        "correct_index": 1,
+        "explanation": "The atomic number is the number of protons in an atom's nucleus."
+      }
+    ]
+  },
+  {
+    "lesson_id": "grammar-basics",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is a noun?",
+        "options": [
+          "An action word",
+          "A describing word",
+          "A person, place, or thing",
+          "A word that connects ideas"
+        ],
+        "correct_index": 2,
+        "explanation": "A noun is a word that names a person, place, thing, or idea."
+      },
+      {
+        "id": 2,
+        "prompt": "What is a verb?",
+        "options": [
+          "A naming word",
+          "An action or state word",
+          "A describing word",
+          "A connecting word"
+        ],
+        "correct_index": 1,
+        "explanation": "A verb expresses an action, occurrence, or state of being."
+      }
+    ]
+  },
+  {
+    "lesson_id": "literature-analysis",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is a theme in literature?",
+        "options": [
+          "The setting of the story",
+          "The main idea or message",
+          "The characters' names",
+          "The author's biography"
+        ],
+        "correct_index": 1,
+        "explanation": "A theme is the central topic or message explored in a literary work."
+      },
+      {
+        "id": 2,
+        "prompt": "What is a protagonist?",
+        "options": [
+          "The main character",
+          "The antagonist",
+          "A minor character",
+          "The narrator"
+        ],
+        "correct_index": 0,
+        "explanation": "The protagonist is the main character in a story."
+      }
+    ]
+  },
+  {
+    "lesson_id": "algebra-basics",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is a variable in algebra?",
+        "options": [
+          "A fixed number",
+          "A symbol representing a number",
+          "A type of equation",
+          "A mathematical operation"
+        ],
+        "correct_index": 1,
+        "explanation": "A variable is a symbol (usually a letter) that represents an unknown or changing value."
+      },
+      {
+        "id": 2,
+        "prompt": "Solve for x: 2x + 3 = 7",
+        "options": [
+          "x = 1",
+          "x = 2",
+          "x = 3",
+          "x = 4"
+        ],
+        "correct_index": 1,
+        "explanation": "Subtract 3 from both sides: 2x = 4, then divide by 2: x = 2."
+      }
+    ]
+  },
+  {
+    "lesson_id": "geometry-fundamentals",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is a right angle?",
+        "options": [
+          "An angle less than 90 degrees",
+          "An angle exactly 90 degrees",
+          "An angle greater than 90 degrees",
+          "Any angle in a triangle"
+        ],
+        "correct_index": 1,
+        "explanation": "A right angle measures exactly 90 degrees."
+      },
+      {
+        "id": 2,
+        "prompt": "What is the sum of angles in a triangle?",
+        "options": [
+          "90 degrees",
+          "180 degrees",
+          "270 degrees",
+          "360 degrees"
+        ],
+        "correct_index": 1,
+        "explanation": "The sum of the interior angles of a triangle is always 180 degrees."
+      }
+    ]
+  },
+  {
+    "lesson_id": "programming-intro",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is programming?",
+        "options": [
+          "Writing stories",
+          "Creating art",
+          "Writing instructions for computers",
+          "Solving math problems"
+        ],
+        "correct_index": 2,
+        "explanation": "Programming involves writing code that tells computers what to do."
+      },
+      {
+        "id": 2,
+        "prompt": "What is an algorithm?",
+        "options": [
+          "A type of computer",
+          "A step-by-step procedure",
+          "A programming language",
+          "A computer virus"
+        ],
+        "correct_index": 1,
+        "explanation": "An algorithm is a set of rules or processes to solve a problem."
+      }
+    ]
+  },
+  {
+    "lesson_id": "python-basics",
+    "questions": [
+      {
+        "id": 1,
+        "prompt": "What is Python?",
+        "options": [
+          "A type of snake",
+          "A programming language",
+          "A database",
+          "A web browser"
+        ],
+        "correct_index": 1,
+        "explanation": "Python is a high-level programming language used for various applications."
+      },
+      {
+        "id": 2,
+        "prompt": "What does 'print' do in Python?",
+        "options": [
+          "Reads input",
+          "Displays output",
+          "Calculates math",
+          "Creates files"
+        ],
+        "correct_index": 1,
+        "explanation": "The print function displays text or values to the screen."
+      }
+    ]
+  }
+]

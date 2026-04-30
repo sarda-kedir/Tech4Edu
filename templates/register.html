@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<section class="detail auth-page">
+  <h1>Create an account</h1>
+  {% if error %}
+  <div class="info-box">{{ error }}</div>
+  {% endif %}
+  <form method="post" class="form-grid auth-form">
+    <label>
+      Username
+      <input type="text" name="username" placeholder="Choose a username" required />
+    </label>
+    <label>
+      Password
+      <input type="password" name="password" placeholder="Choose a password" required />
+    </label>
+    <label>
+      Confirm password
+      <input type="password" name="confirm" placeholder="Repeat your password" required />
+    </label>
+    <label>
+      Select Grade
+      <select name="grade" required>
+        <option value="">Choose a grade</option>
+        {% for grade in grade_options %}
+        <option value="{{ grade }}">{{ grade }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <button class="button" type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a>.</p>
+</section>
+{% endblock %}

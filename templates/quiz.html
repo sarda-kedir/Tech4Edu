@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Quiz - {{ lesson.title }}{% endblock %}
+{% block content %}
+<article class="detail">
+  <h1>Quiz: {{ lesson.title }}</h1>
+  <p class="subtitle">Subject: {{ lesson.subject }}</p>
+  {% if completed %}
+  <div class="result-box">
+    <h2>Your score: {{ score }}%</h2>
+    {% for item in results %}
+    <div class="result-item {{ 'correct' if item.is_correct else 'incorrect' }}">
+      <p><strong>{{ item.question }}</strong></p>
+      <p>Your answer: {{ item.options[item.selected] if item.selected is not none else 'No answer' }}</p>
+      <p>Correct answer: {{ item.options[item.correct_index] }}</p>
+      <p class="explanation">Explanation: {{ item.explanation }}</p>
+    </div>
+    {% endfor %}
+    <a class="button" href="{{ url_for('lesson', lesson_id=lesson.id) }}">Back to lesson</a>
+  </div>
+  {% else %}
+  {% if draft_saved %}
+  <div class="status-info">
+    <p>Your quiz work was saved. You can continue anytime.</p>
+  </div>
+  {% endif %}
+  {% if draft_answers %}
+  <div class="status-info">
+    <p>Resumed from your saved progress. Your previous answers are preselected.</p>
+  </div>
+  {% endif %}
+  <form method="post" action="{{ url_for('submit_quiz') }}" class="quiz-form">
+    <input type="hidden" name="lesson_id" value="{{ lesson.id }}" />
+    {% for question in quiz.questions %}
+    <div class="question-block">
+      <p><strong>{{ question.id }}. {{ question.prompt }}</strong></p>
+      {% for option in question.options %}
+      <label>
+        <input type="radio" name="question_{{ question.id }}" value="{{ loop.index0 }}" {% if draft_answers.get(question.id|string) == loop.index0|string %}checked{% endif %} />
+        {{ option }}
+      </label>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    <div class="quiz-actions">
+      <button class="button" type="submit" name="action" value="submit">Submit quiz</button>
+      <button class="button secondary" type="submit" name="action" value="save_exit">Save and exit</button>
+    </div>
+  </form>
+  {% endif %}
+</article>
+{% endblock %}

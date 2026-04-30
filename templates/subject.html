@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ subject }} Lessons{% endblock %}
+{% block content %}
+<section class="hero gradient-hero subject-hero">
+  <div class="hero-text">
+    <h1>{{ subject }} Lessons</h1>
+    <p>Explore the units and lessons for your grade.</p>
+  </div>
+  <form method="get" class="grade-select-form">
+    <label>
+      Grade
+      <select name="grade" onchange="this.form.submit()">
+        {% for grade in grade_options %}
+        <option value="{{ grade }}" {% if grade == selected_grade %}selected{% endif %}>{{ grade }}</option>
+        {% endfor %}
+      </select>
+    </label>
+  </form>
+</section>
+{% for group in grouped_lessons %}
+<section class="unit-section subject-unit-section">
+  <div class="unit-header">
+    <h2>{{ group.unit }}</h2>
+    <p>{{ selected_grade }} {{ subject }}</p>
+  </div>
+  <div class="cards">
+    {% for lesson in group.lessons %}
+    <article class="card clickable-card" onclick="window.location='{{ url_for("lesson", lesson_id=lesson.id) }}'">
+      <h3>{{ lesson.title }}</h3>
+      <p>{{ lesson.summary }}</p>
+      <p>Status: <strong class="lesson-status {{ 'lesson-status-completed' if lesson.completed else 'lesson-status-not-started' }}">{{ 'Completed' if lesson.completed else 'Not started' }}</strong></p>
+      {% if lesson.score is not none %}
+      <p>Last score: {{ lesson.score }}%</p>
+      {% endif %}
+      <div class="card-links">
+        <a href="{{ url_for("lesson", lesson_id=lesson.id) }}" onclick="event.stopPropagation();">Read lesson</a>
+        <a href="{{ url_for("quiz", lesson_id=lesson.id) }}" onclick="event.stopPropagation();">Take quiz</a>
+        <a href="{{ url_for("download_lesson_pdf", lesson_id=lesson.id) }}" class="secondary" onclick="event.stopPropagation();">Download PDF</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% if grouped_lessons|length == 0 %}
+<div class="info-box">No lessons are available for {{ selected_grade }} in {{ subject }} yet.</div>
+{% endif %}
+<a href="{{ url_for('index') }}" class="button">Back to Subjects</a>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }}{% endblock %}
+{% block content %}
+<article class="detail lesson-detail">
+  <h1>{{ lesson.title }}</h1>
+  <p class="subtitle">Subject: {{ lesson.subject }}</p>
+  <p class="lesson-summary">{{ lesson.summary }}</p>
+  {% for section in lesson.sections %}
+  <section class="lesson-section">
+    <h2>{{ section.heading }}</h2>
+    <p class="lesson-body">{{ section.body | replace('\n', '<br>') | safe }}</p>
+    {% if section.table %}
+    <div class="lesson-table-wrap">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            {% for header in section.table.headers %}
+            <th>{{ header }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in section.table.rows %}
+          <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+  <div class="lesson-actions">
+    <a class="button secondary" href="{{ url_for('subject_page', subject=lesson.subject|lower, grade=lesson.grade) }}">Back to lessons</a>
+    <a class="button" href="{{ url_for('quiz', lesson_id=lesson.id) }}">Take quiz</a>
+    <a class="button secondary" href="{{ url_for('download_lesson_pdf', lesson_id=lesson.id) }}">Download PDF</a>
+    <a class="button secondary" href="{{ url_for('progress') }}">View progress</a>
+  </div>
+</article>
+{% endblock %}

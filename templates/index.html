@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero gradient-hero home-hero">
+  <div class="hero-text">
+    <h1>Learn Without Limits</h1>
+    <p>Access structured STEM lessons, practice with real exam questions, track your progress, and get help from an AI tutor anytime, anywhere.</p>
+  </div>
+  <div class="grade-row">
+    <div class="grade-callout">SELECT A GRADE</div>
+    <form method="get" class="grade-select-form">
+      <label>
+        <select name="grade" onchange="this.form.submit()" aria-label="Select a grade">
+          {% for grade in grade_options %}
+          <option value="{{ grade }}" {% if grade == selected_grade %}selected{% endif %}>{{ grade }}</option>
+          {% endfor %}
+        </select>
+      </label>
+    </form>
+    <div class="hero-grade-badge">
+      <span>Grade</span>
+      <strong>{{ selected_grade }}</strong>
+    </div>
+  </div>
+</section>
+<section class="cards subject-grid">
+  {% for subject in subjects %}
+  <article class="card clickable-card" data-url="{{ url_for('subject_page', subject=subject|lower, grade=selected_grade) }}" onclick="window.location=this.dataset.url">
+    <h2>{{ subject }}</h2>
+    <p>Explore lessons in {{ selected_grade }} {{ subject }}</p>
+    <div class="card-links">
+      <a href="{{ url_for('subject_page', subject=subject|lower, grade=selected_grade) }}" onclick="event.stopPropagation();">View Lessons</a>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

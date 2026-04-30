@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a4b91" />
+    <link rel="icon" href="{{ url_for('content_image', filename='tech4edu.jpg') }}" />
+    <link rel="apple-touch-icon" href="{{ url_for('content_image', filename='tech4edu.jpg') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+    <title>Tech4Edu | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <a href="{{ url_for('index') }}">
+          <img src="{{ url_for('content_image', filename='tech4edu.jpg') }}" alt="Tech4Edu logo" class="brand-logo" />
+          Tech4Edu
+        </a>
+      </div>
+      <nav>
+        {% if request.endpoint not in ['login', 'register'] %}
+        <a href="{{ url_for('index') }}">Lessons</a>
+        <a href="{{ url_for('progress') }}">Progress</a>
+        <a href="{{ url_for('ai_tutor') }}">AI Tutor</a>
+        {% else %}
+        <a href="{{ url_for('login') }}#about">About</a>
+        {% endif %}
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        {% if is_authenticated %}
+        <span class="nav-user">Hi, {{ current_user.username }}</span>
+        <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+        <a href="{{ url_for('login') }}#login-card">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+      </nav>
+    </header>
+    <main class="page-body">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+      <p>Offline-first educational platform · Tech4Edu</p>
+    </footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("{{ url_for('static', filename='service-worker.js') }}")
+          .catch(() => console.warn('Service Worker registration failed.'));
+      }
+
+      (function () {
+        const storageKey = 'tech4edu-theme';
+        const body = document.body;
+        const toggleBtn = document.getElementById('themeToggle');
+
+        function applyTheme(theme) {
+          body.classList.toggle('dark-mode', theme === 'dark');
+          if (toggleBtn) {
+            toggleBtn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+            toggleBtn.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+          }
+        }
+
+        const storedTheme = localStorage.getItem(storageKey);
+        const preferredDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = storedTheme || (preferredDark ? 'dark' : 'light');
+        applyTheme(initialTheme);
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', function () {
+            const nextTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+            localStorage.setItem(storageKey, nextTheme);
+            applyTheme(nextTheme);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

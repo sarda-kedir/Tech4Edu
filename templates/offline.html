@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Offline Mode{% endblock %}
+{% block content %}
+<section class="detail">
+  <h1>Offline Mode</h1>
+  <p>You are offline. Use the saved lesson PDFs and cached pages to continue learning even without a network connection.</p>
+  <a class="button" href="{{ url_for('index') }}">Return Home</a>
+</section>
+{% endblock %}

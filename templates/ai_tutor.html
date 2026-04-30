@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}AI Tutor{% endblock %}
+{% block content %}
+<section class="detail" id="ai-chat-section">
+  <h1>AI Tutor</h1>
+  <p>Ask anything or continue the conversation. The tutor can help with lessons, study strategy, and broader learning questions.</p>
+  {% if not ai_enabled %}
+  <div class="info-box">
+    AI tutor is running in local fallback mode. For deeper conversations, set <code>OPENAI_API_KEY</code> and install OpenAI support.
+  </div>
+  {% elif offline_available %}
+  <div class="info-box">
+    Local offline AI is available and will be used first for strong, private responses.
+  </div>
+  {% endif %}
+  <div class="status-info">
+    <p><strong>Connection Status:</strong> {% if online %}Online{% else %}Offline{% endif %}</p>
+    {% if online and openai_available %}
+    <p>Use the enhanced button for ChatGPT-style OpenAI responses (model: {{ openai_enhanced_model }}).</p>
+    {% elif online %}
+    <p>Internet is available, but enhanced AI is not configured yet (add OPENAI_API_KEY and install OpenAI package).</p>
+    {% else %}
+    <p>Using local offline AI model. The tutor still works without internet.</p>
+    {% endif %}
+  </div>
+  {% if enhanced_status %}
+  <div class="info-box">
+    <p><strong>Enhanced Status:</strong> {{ enhanced_status }}</p>
+  </div>
+  {% endif %}
+  <div class="ai-chat">
+    {% for message in chat_history %}
+    <div class="chat-message {{ message.role }}">
+      <div class="message-bubble">
+        <strong>{{ 'You' if message.role == 'user' else 'Tutor' }}</strong>
+        <p>{{ message.content }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <form method="post" action="{{ url_for('ai_tutor') }}#ai-chat-section" class="ai-form">
+    <label for="question">Your question</label>
+    <textarea id="question" name="question" rows="4" placeholder="Ask about electricity, motion, ecosystems, programming, or how to study.">{{ question_text }}</textarea>
+    <div class="ai-actions">
+      <button class="button" type="submit">Send</button>
+      {% if online %}
+      <button class="button" type="submit" name="enhanced" value="true" {% if not openai_available %}disabled title="Enhanced AI needs OPENAI_API_KEY and openai package"{% endif %}>Use ChatGPT (OpenAI, requires internet)</button>
+      {% endif %}
+      <button class="button secondary" type="submit" name="reset_chat" value="1">New conversation</button>
+    </div>
+  </form>
+</section>
+<script>
+  (function() {
+    var chatContainer = document.querySelector('.ai-chat');
+    if (!chatContainer) {
+      return;
+    }
+    // Keep the newest tutor response in view after submit.
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    var messages = chatContainer.querySelectorAll('.chat-message');
+    if (messages.length > 0 && window.location.hash === '#ai-chat-section') {
+      messages[messages.length - 1].scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  })();
+</script>
+{% endblock %}

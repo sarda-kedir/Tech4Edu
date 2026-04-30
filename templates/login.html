@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="login-page">
+  <section class="hero-section login-hero-photo">
+    <div class="hero-content">
+      <h1 class="hero-title">Learn anywhere. Grow everywhere.</h1>
+      <p class="hero-subtitle">Empowering Ethiopian students with offline-first STEM mastery, guided practice, and AI support that works without the internet.</p>
+      <div class="hero-actions">
+        <a class="button" href="{{ url_for('register') }}">Create student account</a>
+        <a class="button secondary" href="#login-card">Sign in</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span>6+</span>
+          <small>Subjects</small>
+        </div>
+        <div>
+          <span>4</span>
+          <small>Grade levels</small>
+        </div>
+        <div>
+          <span>Offline</span>
+          <small>Ready</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="login-intro" id="about">
+    <p class="intro-kicker">About Tech4Edu</p>
+    <h2>Offline-first learning for every classroom.</h2>
+    <p>Across many Ethiopian classrooms, students face the same barrier: learning tools disappear the moment connectivity drops. Lessons are missed, revision stalls, and teachers struggle to track progress when resources are scattered across paper notes, inconsistent access, and unreliable internet.</p>
+    <p>Tech4Edu solves that by putting a complete learning experience directly in students' hands. The platform stores lesson content offline, generates PDFs for study without data, and keeps quizzes and feedback available at any time. Progress tracking runs locally, so students and teachers can see growth even when the connection is down.</p>
+    <p>We go further by adding AI-guided tutoring and step-by-step explanations to reinforce understanding instead of memorization. Students can revise for exams, catch up on missed classes, or explore new topics with a clear path, steady practice, and visible improvement.</p>
+  </section>
+
+  <section class="login-shell">
+    <div class="login-story">
+      <p class="story-kicker">Why Tech4Edu</p>
+      <h2>Designed for real classrooms, built for real progress.</h2>
+      <p>Tech4Edu blends offline lessons, smart quizzes, and AI-powered coaching so students can keep learning even when connectivity disappears.</p>
+      <div class="story-grid">
+        <div>
+          <h3>Offline-first</h3>
+          <p>Lessons, quizzes, and PDFs stay available on low bandwidth connections.</p>
+        </div>
+        <div>
+          <h3>Track growth</h3>
+          <p>Grade and subject progress dashboards show exactly where to improve.</p>
+        </div>
+        <div>
+          <h3>AI guidance</h3>
+          <p>Get step-by-step tutoring with examples and instant explanations.</p>
+        </div>
+        <div>
+          <h3>Exam ready</h3>
+          <p>Practice quizzes build confidence before national exams.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail auth-page" id="login-card">
+      <div class="auth-header">
+        <p class="auth-kicker">Welcome back</p>
+        <h2>Login to your account</h2>
+        <p>Continue where you left off and keep your learning streak alive.</p>
+      </div>
+      {% if error %}
+      <div class="info-box">{{ error }}</div>
+      {% endif %}
+      <form method="post" class="form-grid auth-form">
+        <label>
+          Username
+          <input type="text" name="username" placeholder="Enter your username" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="Enter your password" required />
+        </label>
+        <button class="button" type="submit">Login</button>
+      </form>
+      <p class="auth-footer">Don't have an account? <a href="{{ url_for('register') }}">Register here</a>.</p>
+    </div>
+  </section>
+</div>
+{% endblock %}
